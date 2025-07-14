@@ -8,9 +8,9 @@ import java.util.List;
 import java.util.Map;
 
 public class Task3 {
-    private static final String SERIAL_FILE = "serieParaRelatorio.txt";
-    private static final String COUNTRIES_FILE = "paises.txt";
-    private static final String OUTPUT_FILE = "listaTotais.txt";
+    private static final String SERIAL_FILE = "arquivos_entrada_e_saida/serieParaRelatorio.txt";
+    private static final String COUNTRIES_FILE = "arquivos_entrada_e_saida/paises.txt";
+    private static final String OUTPUT_FILE = "arquivos_entrada_e_saida/listaTotais.txt";
     private final FileManager fileManager = new FileManager();
 
     public void run() throws IOException {

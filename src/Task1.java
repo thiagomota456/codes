@@ -5,8 +5,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Task1 {
-    private static final String INPUT_FILE = "serieSemDV.txt";
-    private static final String OUTPUT_FILE = "serieComDV.txt";
+    private static final String INPUT_FILE = "arquivos_entrada_e_saida/serieSemDV.txt";
+    private static final String OUTPUT_FILE = "arquivos_entrada_e_saida/serieComDV.txt";
     private final FileManager fileManager = new FileManager();
     private final SerialValidator serialValidator = new SerialValidator();
 

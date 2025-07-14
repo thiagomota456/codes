@@ -5,8 +5,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Task2 {
-    private static final String INPUT_FILE = "serieParaVerificar.txt";
-    private static final String OUTPUT_FILE = "serieVerificada.txt";
+    private static final String INPUT_FILE = "arquivos_entrada_e_saida/serieParaVerificar.txt";
+    private static final String OUTPUT_FILE = "arquivos_entrada_e_saida/serieVerificada.txt";
     private final FileManager fileManager = new FileManager();
     private final SerialValidator serialValidator = new SerialValidator();
 

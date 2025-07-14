@@ -1,0 +1,57 @@
+Descrição da Solução
+
+Esta aplicação Java foi desenvolvida para resolver o desafio de números de série do Instituto Tecgraf. A solução é modular e executa três tarefas principais:
+
+1.  Geração de Dígitos Verificadores: Calcula e anexa o dígito verificador aos números de série sem DV.
+2.  Verificação de Dígitos Verificadores: Valida se o dígito verificador existente em números de série completos está correto.
+3.  Geração de Relatório de Automóveis: Filtra, contabiliza e lista automóveis por país de fabricação.
+
+Estrutura do Projeto
+
+O projeto segue a seguinte organização de pastas:
+
+----
+
+codes
+├── src/                          (Código-fonte Java)
+│   ├── Main.java
+│   ├── FileManager.java
+│   ├── SerialValidator.java
+│   ├── Task1.java
+│   ├── Task2.java
+│   └── Task3.java
+├── arquivos\_entrada\_e\_saida/     (Arquivos de entrada e saída)
+│   ├── paises.txt                (Entrada)
+│   ├── serieParaRelatorio.txt    (Entrada)
+│   ├── serieParaVerificar.txt    (Entrada)
+│   ├── serieSemDV.txt            (Entrada)
+│   ├── serieComDV.txt            (Saída, gerado pela Tarefa 1)
+│   ├── serieVerificada.txt       (Saída, gerado pela Tarefa 2)
+│   └── listaTotais.txt           (Saída, gerado pela Tarefa 3)
+└── Leiame.txt                    (Este arquivo)
+
+------
+
+Os arquivos de entrada (`paises.txt`, `serieParaRelatorio.txt`, `serieParaVerificar.txt`, `serieSemDV.txt`) devem ser colocados na pasta `arquivos_entrada_e_saida/`. Os arquivos de saída serão gerados nesta mesma pasta após a execução. Os arquivos não devem ser renomeados.
+
+Instruções de Utilização
+
+Pré-requisitos:
+
+Java Development Kit (JDK) 8 ou superior instalado.
+
+Passos para Execução:
+
+1.  Posicione-se no diretório correto: Abra um terminal (CMD ou PowerShell) e navegue até o diretório `seu_diretorio_do_desafio` (onde as pastas `src/` e `arquivos_entrada_e_saida/` estão localizadas).
+
+2.  Compile o código:
+    javac src/*.java -d bin
+
+    Isso criará uma pasta `bin/` com os arquivos compilados (`.class`).
+
+3.  Execute a aplicação:
+    java -cp bin codes.src.Main
+
+    Observação Importante: As constantes de caminho dos arquivos dentro do código (`Task1.java`, `Task2.java`, `Task3.java`) já foram ajustadas para `arquivos_entrada_e_saida/NomeDoArquivo.txt`. Isso garante que o programa encontre os arquivos corretamente quando executado do diretório raiz do projeto.
+
+Ao final da execução, os arquivos de saída (`serieComDV.txt`, `serieVerificada.txt`, `listaTotais.txt`) serão gerados na pasta `arquivos_entrada_e_saida/`.
